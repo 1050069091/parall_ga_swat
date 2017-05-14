@@ -1,0 +1,217 @@
+subroutine communication_to_get_best_values(recur_num)
+use mymodule
+use mpi
+implicit none
+
+integer,intent(in) :: recur_num
+
+integer ierr,recv_buff_size,recv_myid,int_index,seed_num,int_j
+real recv_obj_fn_values(interval*numprocs)
+
+real send_para_values(interval*files_need_modi),rate_obj_fn_val_arr(seed_rank)
+real recv_para_values(numprocs*interval*files_need_modi)
+
+integer int_obj_fn_val(seed_rank)&
+    ,plus_int_obj_fn_val(seed_rank),seed_nums_sorted(seed_rank)
+
+real new_all_para_values_arr(numprocs*interval*files_need_modi)
+
+real random_real_val
+integer parent_index1,parent_index2,myid1,myid2,interval1,interval2&
+    ,count_ga,intersect_para_index,intersect_index1,intersect_index2,varition_para_index
+
+real para_val_in_one_seed_arr1(files_need_modi),para_val_in_one_seed_arr2(files_need_modi),tmp_real
+
+integer seed_count,tmp_interval,tmp_myid,i,j,sum_count,para_index
+
+recv_buff_size=interval*files_need_modi
+recv_myid=numprocs-1
+
+do i=1,interval
+   send_para_values((i-1)*files_need_modi+1:i*files_need_modi) = &
+                        para_values_2arr_in_one_process(i,1:files_need_modi)
+
+end do
+!write(*,*) "myid:",myid,send_para_values
+
+call MPI_GATHER(obj_fn_valuses_in_one_process,interval,MPI_REAL&
+                ,recv_obj_fn_values,interval,MPI_REAL&
+                ,recv_myid,mycomm,ierr)
+
+call MPI_GATHER(send_para_values,recv_buff_size&
+                ,MPI_REAL,recv_para_values,recv_buff_size&
+                ,MPI_REAL,recv_myid,mycomm,ierr)
+
+if(myid==recv_myid) then
+    int_index = 1
+    int_j = 1
+    do i=1,numprocs
+        do j=1,interval
+            seed_num = (j-1)*numprocs+i 
+            if(seed_num <= seed_rank) then 
+                seed_nums_sorted(int_j) = seed_num
+                int_obj_fn_val(int_j) = 1000+1000*recv_obj_fn_values(int_index) 
+                int_j = int_j + 1
+            end if
+            int_index = int_index + 1
+        end do
+    end do
+
+    !call quick_sort(int_obj_fn_val,seed_nums_sorted,1,seed_rank)
+
+    plus_int_obj_fn_val(1) = 0
+    do i=1,seed_rank
+        if(i==1) then
+            plus_int_obj_fn_val(1) = int_obj_fn_val(1)
+        else
+            plus_int_obj_fn_val(i) = int_obj_fn_val(i) + plus_int_obj_fn_val(i-1)
+        end if
+    end do
+
+    do i=1,seed_rank
+        rate_obj_fn_val_arr(i) = plus_int_obj_fn_val(i) / (plus_int_obj_fn_val(seed_rank)*1.0)
+    end do
+
+    !write(*,*) "int_obj_fn_val:",int_obj_fn_val
+    !write(*,*) "seed_nums_sorted",seed_nums_sorted
+
+    !write(*,*) "plus_int_obj_fn_val",plus_int_obj_fn_val
+    !write(*,*) "rate_obj_fn_val_arr",rate_obj_fn_val_arr
+
+    call init_random_seed(numprocs) 
+
+    !vartion_rate = start_variation_rate-recur_num/recur_rank*(start_variation-min_variation_rate)
+
+    !new_all_para_values_arr = recv_obj_fn_values
+    !write(*,*) "cur_num:",cur_num,"85"
+    seed_count = 1
+
+    outter:do !m=1,numprocs
+        !if(m<=mod(seed_rank,numprocs)) then
+        !    tmp_interval = interval
+        !else
+        !    tmp_interval = interval - 1
+        !end if
+    !inner:do n=1,tmp_interval
+        call random_number(random_real_val)  
+        call find_index_choosed(random_real_val,rate_obj_fn_val_arr,seed_rank,parent_index1)
+        !write(*,*) random_real_val,rate_obj_fn_val_arr,seed_rank,parent_index1
+        do 
+            call random_number(random_real_val)  
+            call find_index_choosed(random_real_val,rate_obj_fn_val_arr,seed_rank,parent_index2)
+            if(parent_index2 /= parent_index1) exit
+
+        end do
+        !write(*,*) random_real_val,rate_obj_fn_val_arr,seed_rank,parent_index2
+
+        myid1 = mod(seed_nums_sorted(parent_index1)-1,numprocs)
+        interval1 = floor((seed_nums_sorted(parent_index1)-1)/(numprocs*1.0))
+        myid2 = mod(seed_nums_sorted(parent_index2)-1,numprocs)
+        interval2 = floor((seed_nums_sorted(parent_index2)-1)/(numprocs*1.0))
+        
+        intersect_index1 = myid1*interval*files_need_modi+interval1*files_need_modi
+        intersect_index2 = myid2*interval*files_need_modi+interval2*files_need_modi
+
+        para_val_in_one_seed_arr1 =&
+            recv_para_values(intersect_index1+1:intersect_index1+files_need_modi)
+        para_val_in_one_seed_arr2 =&
+            recv_para_values(intersect_index2+1:intersect_index2+files_need_modi)
+
+        call random_number(random_real_val)
+        if(random_real_val <= intersect_rate) then
+            count_ga = files_need_modi * intersect_rate
+            do i=1,count_ga
+               call random_number(random_real_val)
+               intersect_para_index = ceiling(files_need_modi * random_real_val)
+
+               tmp_real = para_val_in_one_seed_arr1(intersect_para_index)
+               para_val_in_one_seed_arr1(intersect_para_index) = para_val_in_one_seed_arr2(intersect_para_index)
+               para_val_in_one_seed_arr2(intersect_para_index) = tmp_real
+
+            end do
+        end if
+
+        variation_rate = variation_rate*(1-recur_num/(1.5*recur_rank))
+        !para_index = 2
+        write(*,*) recur_num,":rows:146"
+        call random_number(random_real_val)
+        if(random_real_val <= variation_rate) then
+            count_ga = files_need_modi * variation_rate
+            write(*,*) "count_ga:",count_ga
+            do i=1,count_ga
+                call random_number(random_real_val)
+                intersect_para_index = ceiling(files_need_modi * random_real_val)
+
+                sum_count = 0
+                get_para_index_do:do j=1,para_rank
+                    sum_count = sum_count + files_included_by_each_para_arr(j)
+                    if(intersect_para_index<=sum_count) then
+                        para_index = j
+                        exit get_para_index_do
+                    end if
+                end do get_para_index_do
+
+                call random_number(random_real_val)
+                tmp_real = para_val_in_one_seed_arr1(intersect_para_index)&
+                    +variation_rate*random_real_val*(max_para_arr(para_index)-min_para_arr(para_index))
+                write(*,*) count_ga,i,intersect_para_index,size(para_val_in_one_seed_arr1,1)&
+                    ,tmp_real,para_val_in_one_seed_arr1(intersect_para_index)
+                if(tmp_real>=min_para_arr(para_index).and.tmp_real<=max_para_arr(para_index)) then
+                    para_val_in_one_seed_arr2(intersect_para_index) = tmp_real
+                end if
+
+            end do
+        end if
+
+       ! call varition_para_values(para_val_in_one_seed_arr1,files_need_modi,recur_num)
+        write(*,*) recur_num,":rows:148"
+        
+        !call varition_para_values(para_val_in_one_seed_arr2,files_need_modi,recur_num)
+        
+        !write(*,*) myid1,interval1,"------>",para_val_in_one_seed_arr1 
+        !write(*,*) myid2,interval2,"------>",para_val_in_one_seed_arr2 
+
+        tmp_myid = mod(seed_count-1,numprocs)
+        tmp_interval = floor((seed_count-1)/(numprocs*1.0))
+
+        !write(*,*) "tmp_myid,tmp_interval:",tmp_myid,tmp_interval
+        !write(*,*) tmp_myid*interval*files_need_modi+tmp_interval*files_need_modi+1&
+        !    ,tmp_myid*interval*files_need_modi+(tmp_interval+1)*files_need_modi
+        
+        new_all_para_values_arr(tmp_myid*interval*files_need_modi+tmp_interval*files_need_modi+1&
+            :tmp_myid*interval*files_need_modi+(tmp_interval+1)*files_need_modi)&
+            = para_val_in_one_seed_arr1(1:files_need_modi)
+
+        seed_count = seed_count + 1
+        !write(*,*) "seed_num",seed_count,"160"
+        if(seed_count > seed_rank) exit outter
+
+        tmp_myid = mod(seed_count-1,numprocs)
+        tmp_interval = floor((seed_count-1)/(numprocs*1.0))
+
+        !write(*,*) "tmp_myid,tmp_interval:",tmp_myid,tmp_interval
+        !write(*,*) tmp_myid*interval*files_need_modi+tmp_interval*files_need_modi+1&
+        !    ,tmp_myid*interval*files_need_modi+(tmp_interval+1)*files_need_modi
+        
+        new_all_para_values_arr(tmp_myid*interval*files_need_modi+tmp_interval*files_need_modi+1&
+            :tmp_myid*interval*files_need_modi+(tmp_interval+1)*files_need_modi)&
+            = para_val_in_one_seed_arr2(1:files_need_modi)
+        seed_count = seed_count + 1
+        !write(*,*) "seed_num",seed_count,"174"
+        if(seed_count > seed_rank) exit outter
+        
+    !end do inner
+    end do outter
+    !write(*,*) "-------------------->new:",new_all_para_values_arr
+    !write(*,*) "-------------------->old:",recv_para_values
+end if
+
+!write(*,*) recur_num,myid,"older----:",recv_para_values
+
+!call MPI_SCATTER(new_all_para_values_arr,recv_buff_size&
+!                ,MPI_REAL,recv_para_values,recv_buff_size&
+!                ,MPI_REAL,numprocs-1,mycomm,ierr)
+
+!write(*,*) recur_num,myid,"later----:",recv_para_values
+
+end subroutine communication_to_get_best_values

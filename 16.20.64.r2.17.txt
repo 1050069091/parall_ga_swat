@@ -1,0 +1,1605 @@
+mv: cannot stat `000050002.mgt.00002.bak': No such file or directory
+mv: cannot move `000050001.gw.00002.bak' to `000050001.gw.00002': No such file or directory
+mv: cannot stat `000050002.gw.00002.bak': No such file or directory
+mv: cannot stat `000060001.mgt.00002.bak': No such file or directory
+mv: cannot stat `000060002.mgt.00002.bak': No such file or directory
+mv: cannot stat `000060002.gw.00002.bak': No such file or directory
+mv: cannot stat `000070001.mgt.00002.bak': No such file or directory
+mv: cannot stat `000070001.gw.00002.bak': No such file or directory
+mv: cannot stat `000090002.mgt.00002.bak': No such file or directory
+mv: cannot stat `000090001.gw.00002.bak': No such file or directory
+mv: cannot stat `000090002.gw.00002.bak': No such file or directory
+mv: cannot stat `000100001.mgt.00002.bak': No such file or directory
+mv: cannot stat `000110002.gw.00003.bak': No such file or directory
+mv: cannot stat `000120001.mgt.00003.bak': No such file or directory
+mv: cannot stat `000120001.gw.00003.bak': No such file or directory
+mv: cannot stat `000130002.gw.00003.bak': No such file or directory
+mv: cannot stat `000140001.mgt.00003.bak': No such file or directory
+mv: cannot stat `000140002.mgt.00003.bak': No such file or directory
+mv: cannot stat `000140001.gw.00003.bak': No such file or directory
+mv: cannot stat `000150001.mgt.00003.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 3 with PID 21198 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+cp: skipping file `000050002.gw.00011', as it was replaced while being copied
+mv: cannot stat `000070001.mgt.00016.bak': No such file or directory
+mv: cannot stat `000070001.gw.00016.bak': No such file or directory
+mv: cannot stat `000080002.mgt.00016.bak': No such file or directory
+mv: cannot stat `000080003.mgt.00016.bak': No such file or directory
+mv: cannot move `000080001.gw.00016.bak' to `000080001.gw.00016': No such file or directory
+mv: cannot stat `000080002.gw.00016.bak': No such file or directory
+mv: cannot stat `000080003.gw.00016.bak': No such file or directory
+mv: cannot stat `000110002.mgt.00016.bak': No such file or directory
+mv: cannot stat `000110001.gw.00016.bak': No such file or directory
+mv: cannot stat `000110002.gw.00016.bak': No such file or directory
+mv: cannot stat `000130001.mgt.00016.bak': No such file or directory
+mv: cannot stat `000130002.mgt.00016.bak': No such file or directory
+mv: cannot stat `000150002.mgt.00016.bak': No such file or directory
+mv: cannot stat `000190002.mgt.00016.bak': No such file or directory
+mv: cannot stat `000190001.gw.00016.bak': No such file or directory
+mv: cannot stat `000190002.gw.00016.bak': No such file or directory
+mv: cannot stat `000200001.mgt.00016.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 5 with PID 28770 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 7605 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 3 with PID 12223 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 14 with PID 19432 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 1 with PID 27198 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000160002.mgt.00003.bak': No such file or directory
+mv: cannot stat `000160001.mgt.00011.bak': No such file or directory
+mv: cannot stat `000160001.gw.00003.bak': No such file or directory
+mv: cannot stat `000170001.mgt.00003.bak': No such file or directory
+mv: cannot stat `000170001.gw.00003.bak': No such file or directory
+mv: cannot stat `000180001.mgt.00003.bak': No such file or directory
+mv: cannot stat `000180001.gw.00011.bak': No such file or directory
+mv: cannot stat `000190001.mgt.00011.bak': No such file or directory
+mv: cannot stat `000190002.mgt.00011.bak': No such file or directory
+mv: cannot stat `000190001.gw.00011.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 11 with PID 2621 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000180001.mgt.00014.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 5 with PID 8706 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000010001.mgt.00005.bak': No such file or directory
+mv: cannot stat `000050001.gw.00005.bak': No such file or directory
+mv: cannot stat `000050002.gw.00005.bak': No such file or directory
+mv: cannot stat `000080003.gw.00005.bak': No such file or directory
+mv: cannot stat `000090001.mgt.00005.bak': No such file or directory
+mv: cannot stat `000090002.mgt.00005.bak': No such file or directory
+mv: cannot stat `000090001.gw.00005.bak': No such file or directory
+mv: cannot stat `000090002.gw.00005.bak': No such file or directory
+mv: cannot stat `000100001.mgt.00005.bak': No such file or directory
+mv: cannot stat `000150001.mgt.00005.bak': No such file or directory
+mv: cannot stat `000150002.mgt.00005.bak': No such file or directory
+mv: cannot stat `000150003.mgt.00005.bak': No such file or directory
+mv: cannot stat `000150001.gw.00005.bak': No such file or directory
+mv: cannot stat `000170001.mgt.00005.bak': No such file or directory
+mv: cannot stat `000170001.gw.00005.bak': No such file or directory
+mv: cannot stat `000190001.mgt.00005.bak': No such file or directory
+mv: cannot stat `000190002.gw.00005.bak': No such file or directory
+mv: cannot stat `000200001.mgt.00005.bak': No such file or directory
+mv: cannot stat `000200002.mgt.00005.bak': No such file or directory
+mv: cannot stat `000200001.gw.00005.bak': No such file or directory
+mv: cannot stat `000180001.mgt.00002.bak': No such file or directory
+mv: cannot stat `000190002.mgt.00002.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 8 with PID 15912 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000150002.mgt.00004.bak': No such file or directory
+mv: cannot stat `000150003.mgt.00004.bak': No such file or directory
+mv: cannot stat `000160001.mgt.00004.bak': No such file or directory
+mv: cannot stat `000160002.mgt.00004.bak': No such file or directory
+mv: cannot stat `000170001.mgt.00004.bak': No such file or directory
+mv: cannot stat `000180001.mgt.00004.bak': No such file or directory
+mv: cannot stat `000180001.gw.00004.bak': No such file or directory
+mv: cannot stat `000190001.gw.00004.bak': No such file or directory
+mv: cannot stat `000190002.gw.00004.bak': No such file or directory
+mv: cannot stat `000200001.mgt.00004.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 15 with PID 26186 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 13 with PID 1991 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000130001.mgt.00015.bak': No such file or directory
+mv: cannot stat `000130002.mgt.00015.bak': No such file or directory
+mv: cannot stat `000130001.gw.00015.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 7 with PID 9663 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000200002.mgt.00006.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 8 with PID 18491 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000110001.gw.00004.bak': No such file or directory
+mv: cannot stat `000110002.gw.00004.bak': No such file or directory
+mv: cannot stat `000120001.mgt.00004.bak': No such file or directory
+mv: cannot stat `000120001.gw.00004.bak': No such file or directory
+mv: cannot stat `000130001.mgt.00004.bak': No such file or directory
+mv: cannot move `000130002.mgt.00004.bak' to `000130002.mgt.00004': No such file or directory
+mv: cannot stat `000130001.gw.00004.bak': No such file or directory
+mv: cannot stat `000030001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000030002.mgt.00014.bak': No such file or directory
+mv: cannot stat `000030001.gw.00014.bak': No such file or directory
+mv: cannot stat `000040001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000040002.mgt.00014.bak': No such file or directory
+mv: cannot stat `000130002.gw.00003.bak': No such file or directory
+mv: cannot stat `000140001.mgt.00003.bak': No such file or directory
+mv: cannot stat `000140001.gw.00003.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 7 with PID 27133 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+forrtl: severe (24): end-of-file during read, unit 109, file /home/wujiahao/parall_ga_swat/000200002.mgt.00011
+Image              PC                Routine            Line        Source             
+swat2012_627_para  00000000005DEB96  Unknown               Unknown  Unknown
+swat2012_627_para  00000000005FB997  Unknown               Unknown  Unknown
+swat2012_627_para  00000000004E799E  Unknown               Unknown  Unknown
+swat2012_627_para  0000000000502836  Unknown               Unknown  Unknown
+swat2012_627_para  00000000004DEDA7  Unknown               Unknown  Unknown
+swat2012_627_para  00000000004B49CD  Unknown               Unknown  Unknown
+swat2012_627_para  000000000040401E  Unknown               Unknown  Unknown
+libc-2.12.so       0000003185E1ED1D  __libc_start_main     Unknown  Unknown
+swat2012_627_para  0000000000403F29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 109, file /home/wujiahao/parall_ga_swat/000200002.mgt.00015
+Image              PC                Routine            Line        Source             
+swat2012_627_para  00000000005DEB96  Unknown               Unknown  Unknown
+swat2012_627_para  00000000005FB997  Unknown               Unknown  Unknown
+swat2012_627_para  00000000004E799E  Unknown               Unknown  Unknown
+swat2012_627_para  0000000000502836  Unknown               Unknown  Unknown
+swat2012_627_para  00000000004DEDA7  Unknown               Unknown  Unknown
+swat2012_627_para  00000000004B49CD  Unknown               Unknown  Unknown
+swat2012_627_para  000000000040401E  Unknown               Unknown  Unknown
+libc-2.12.so       0000003185E1ED1D  __libc_start_main     Unknown  Unknown
+swat2012_627_para  0000000000403F29  Unknown               Unknown  Unknown
+mv: cannot stat `000010001.mgt.00001.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 5 with PID 6880 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot move `000010002.gw.00012.bak' to `000010002.gw.00012': No such file or directory
+mv: cannot stat `000020001.mgt.00012.bak': No such file or directory
+mv: cannot stat `000190002.gw.00004.bak': No such file or directory
+mv: cannot stat `000200001.mgt.00004.bak': No such file or directory
+mv: cannot stat `000200002.mgt.00004.bak': No such file or directory
+mv: cannot stat `000200001.gw.00004.bak': No such file or directory
+mv: cannot stat `000200002.gw.00004.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 14 with PID 18669 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000030002.mgt.00010.bak': No such file or directory
+mv: cannot stat `000060001.mgt.00010.bak': No such file or directory
+mv: cannot stat `000080002.gw.00010.bak': No such file or directory
+mv: cannot stat `000080003.gw.00010.bak': No such file or directory
+mv: cannot stat `000090001.mgt.00010.bak': No such file or directory
+mv: cannot stat `000090002.mgt.00010.bak': No such file or directory
+mv: cannot stat `000090001.gw.00010.bak': No such file or directory
+mv: cannot stat `000140002.mgt.00010.bak': No such file or directory
+mv: cannot stat `000160001.mgt.00010.bak': No such file or directory
+mv: cannot move `000010001.mgt.00009.bak' to `000010001.mgt.00009': No such file or directory
+mv: cannot stat `000010002.mgt.00009.bak': No such file or directory
+mv: cannot stat `000010001.gw.00009.bak': No such file or directory
+mv: cannot stat `000010002.gw.00009.bak': No such file or directory
+mv: cannot stat `000020001.mgt.00009.bak': No such file or directory
+mv: cannot stat `000020002.mgt.00009.bak': No such file or directory
+mv: cannot stat `000020002.gw.00009.bak': No such file or directory
+mv: cannot stat `000030001.mgt.00009.bak': No such file or directory
+mv: cannot stat `000030002.mgt.00009.bak': No such file or directory
+mv: cannot stat `000110001.mgt.00009.bak': No such file or directory
+mv: cannot stat `000110002.mgt.00009.bak': No such file or directory
+mv: cannot stat `000110001.gw.00009.bak': No such file or directory
+mv: cannot stat `000110002.gw.00009.bak': No such file or directory
+mv: cannot stat `000120001.mgt.00009.bak': No such file or directory
+mv: cannot stat `000130001.gw.00009.bak': No such file or directory
+mv: cannot stat `000130002.gw.00009.bak': No such file or directory
+mv: cannot stat `000140002.gw.00009.bak': No such file or directory
+mv: cannot stat `000160001.mgt.00004.bak': No such file or directory
+mv: cannot stat `000160002.mgt.00004.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 4 with PID 26341 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000110002.gw.00004.bak': No such file or directory
+mv: cannot stat `000160002.gw.00004.bak': No such file or directory
+mv: cannot stat `000170001.mgt.00004.bak': No such file or directory
+mv: cannot stat `000170001.gw.00004.bak': No such file or directory
+mv: cannot stat `000180001.gw.00004.bak': No such file or directory
+mv: cannot stat `000190001.mgt.00004.bak': No such file or directory
+mv: cannot stat `000190002.mgt.00004.bak': No such file or directory
+mv: cannot stat `000190001.gw.00004.bak': No such file or directory
+mv: cannot stat `000190002.gw.00004.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 11 with PID 4414 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000010001.mgt.00001.bak': No such file or directory
+mv: cannot stat `000010002.mgt.00001.bak': No such file or directory
+mv: cannot stat `000010002.gw.00001.bak': No such file or directory
+mv: cannot stat `000050001.gw.00001.bak': No such file or directory
+mv: cannot stat `000050002.gw.00001.bak': No such file or directory
+mv: cannot stat `000060001.mgt.00001.bak': No such file or directory
+mv: cannot stat `000060002.mgt.00001.bak': No such file or directory
+mv: cannot stat `000060001.gw.00001.bak': No such file or directory
+mv: cannot stat `000070001.mgt.00001.bak': No such file or directory
+mv: cannot stat `000070001.gw.00001.bak': No such file or directory
+mv: cannot move `000080001.mgt.00001.bak' to `000080001.mgt.00001': No such file or directory
+mv: cannot stat `000080002.mgt.00001.bak': No such file or directory
+mv: cannot stat `000080003.mgt.00001.bak': No such file or directory
+mv: cannot stat `000080001.gw.00001.bak': No such file or directory
+mv: cannot stat `000090002.mgt.00001.bak': No such file or directory
+mv: cannot stat `000100002.gw.00001.bak': No such file or directory
+mv: cannot stat `000110001.mgt.00001.bak': No such file or directory
+mv: cannot stat `000110001.gw.00001.bak': No such file or directory
+mv: cannot stat `000110002.gw.00001.bak': No such file or directory
+mv: cannot stat `000120001.gw.00001.bak': No such file or directory
+mv: cannot stat `000130001.mgt.00001.bak': No such file or directory
+mv: cannot stat `000130002.mgt.00001.bak': No such file or directory
+mv: cannot stat `000130001.gw.00001.bak': No such file or directory
+mv: cannot stat `000140001.mgt.00001.bak': No such file or directory
+mv: cannot stat `000140002.mgt.00001.bak': No such file or directory
+mv: cannot stat `000140001.gw.00001.bak': No such file or directory
+mv: cannot stat `000140002.gw.00001.bak': No such file or directory
+mv: cannot stat `000150002.gw.00001.bak': No such file or directory
+mv: cannot stat `000160002.mgt.00001.bak': No such file or directory
+mv: cannot stat `000160001.gw.00001.bak': No such file or directory
+mv: cannot stat `000160002.gw.00001.bak': No such file or directory
+mv: cannot stat `000190002.mgt.00012.bak': No such file or directory
+mv: cannot stat `000200001.gw.00012.bak': No such file or directory
+mv: cannot stat `000200002.gw.00012.bak': No such file or directory
+mv: cannot stat `000200002.gw.00001.bak': No such file or directory
+mv: cannot stat `000090001.gw.00014.bak': No such file or directory
+mv: cannot stat `000090002.gw.00014.bak': No such file or directory
+mv: cannot stat `000100001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000100002.mgt.00014.bak': No such file or directory
+mv: cannot stat `000100002.gw.00014.bak': No such file or directory
+mv: cannot stat `000110001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000120001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000140001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000140002.mgt.00014.bak': No such file or directory
+mv: cannot stat `000140001.gw.00014.bak': No such file or directory
+mv: cannot stat `000140002.gw.00014.bak': No such file or directory
+mv: cannot stat `000010001.gw.00001.bak': No such file or directory
+mv: cannot stat `000010002.gw.00001.bak': No such file or directory
+mv: cannot stat `000050001.gw.00009.bak': No such file or directory
+mv: cannot stat `000050002.gw.00009.bak': No such file or directory
+mv: cannot stat `000060001.mgt.00009.bak': No such file or directory
+mv: cannot stat `000080003.gw.00009.bak': No such file or directory
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7535****** 耗时:    11s*****************************************
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 12272 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000030002.gw.00014.bak': No such file or directory
+mv: cannot stat `000040002.mgt.00014.bak': No such file or directory
+mv: cannot move `000040001.gw.00014.bak' to `000040001.gw.00014': No such file or directory
+mv: cannot stat `000040002.gw.00014.bak': No such file or directory
+mv: cannot stat `000050001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000050002.mgt.00014.bak': No such file or directory
+mv: cannot stat `000060001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000060002.mgt.00014.bak': No such file or directory
+mv: cannot stat `000100002.mgt.00014.bak': No such file or directory
+mv: cannot stat `000100001.gw.00014.bak': No such file or directory
+mv: cannot stat `000110002.mgt.00014.bak': No such file or directory
+mv: cannot stat `000120001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000160001.gw.00014.bak': No such file or directory
+mv: cannot stat `000160002.gw.00014.bak': No such file or directory
+mv: cannot stat `000170001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000180001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000180001.gw.00014.bak': No such file or directory
+mv: cannot stat `000190001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000190002.mgt.00014.bak': No such file or directory
+mv: cannot stat `000190001.gw.00014.bak': No such file or directory
+mv: cannot stat `000190002.gw.00014.bak': No such file or directory
+mv: cannot stat `000200001.mgt.00014.bak': No such file or directory
+mv: cannot stat `000200002.mgt.00014.bak': No such file or directory
+mv: cannot stat `000010001.mgt.00007.bak': No such file or directory
+mv: cannot stat `000010001.gw.00007.bak': No such file or directory
+mv: cannot stat `000010002.gw.00007.bak': No such file or directory
+mv: cannot stat `000020001.mgt.00007.bak': No such file or directory
+mv: cannot stat `000020001.gw.00007.bak': No such file or directory
+mv: cannot stat `000010001.mgt.00002.bak': No such file or directory
+mv: cannot stat `000010001.mgt.00011.bak': No such file or directory
+mv: cannot stat `000010002.mgt.00011.bak': No such file or directory
+mv: cannot stat `000010001.gw.00011.bak': No such file or directory
+mv: cannot stat `000010002.gw.00011.bak': No such file or directory
+mv: cannot stat `000020001.mgt.00011.bak': No such file or directory
+mv: cannot stat `000020002.mgt.00011.bak': No such file or directory
+mv: cannot stat `000020002.gw.00011.bak': No such file or directory
+mv: cannot stat `000030001.mgt.00011.bak': No such file or directory
+mv: cannot stat `000030002.mgt.00011.bak': No such file or directory
+mv: cannot stat `000030001.gw.00011.bak': No such file or directory
+mv: cannot stat `000180001.mgt.00010.bak': No such file or directory
+mv: cannot stat `000180001.gw.00010.bak': No such file or directory
+mv: cannot stat `000190001.mgt.00010.bak': No such file or directory
+mv: cannot stat `000190002.mgt.00010.bak': No such file or directory
+mv: cannot stat `000190001.gw.00010.bak': No such file or directory
+mv: cannot stat `000190002.gw.00010.bak': No such file or directory
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7596****** 耗时:    11s*****************************************
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 31251 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+forrtl: severe (24): end-of-file during read, unit 109, file /home/wujiahao/parall_ga_swat/000010001.mgt.00009
+Image              PC                Routine            Line        Source             
+swat2012_627_para  00000000005DEB96  Unknown               Unknown  Unknown
+swat2012_627_para  00000000005FB997  Unknown               Unknown  Unknown
+swat2012_627_para  00000000004E799E  Unknown               Unknown  Unknown
+swat2012_627_para  0000000000502836  Unknown               Unknown  Unknown
+swat2012_627_para  00000000004DEDA7  Unknown               Unknown  Unknown
+swat2012_627_para  00000000004B49CD  Unknown               Unknown  Unknown
+swat2012_627_para  000000000040401E  Unknown               Unknown  Unknown
+libc-2.12.so       0000003185E1ED1D  __libc_start_main     Unknown  Unknown
+swat2012_627_para  0000000000403F29  Unknown               Unknown  Unknown
+forrtl: severe (24): end-of-file during read, unit 109, file /home/wujiahao/parall_ga_swat/000010001.mgt.00009
+Image              PC                Routine            Line        Source             
+swat2012_627_para  00000000005DEB96  Unknown               Unknown  Unknown
+swat2012_627_para  00000000005FB997  Unknown               Unknown  Unknown
+swat2012_627_para  00000000004E799E  Unknown               Unknown  Unknown
+swat2012_627_para  0000000000502836  Unknown               Unknown  Unknown
+swat2012_627_para  00000000004DEDA7  Unknown               Unknown  Unknown
+swat2012_627_para  00000000004B49CD  Unknown               Unknown  Unknown
+swat2012_627_para  000000000040401E  Unknown               Unknown  Unknown
+libc-2.12.so       0000003185E1ED1D  __libc_start_main     Unknown  Unknown
+swat2012_627_para  0000000000403F29  Unknown               Unknown  Unknown
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 13 with PID 16626 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 0 with PID 24413 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000010001.mgt.00004.bak': No such file or directory
+mv: cannot stat `000010001.gw.00010.bak': No such file or directory
+mv: cannot stat `000010002.mgt.00004.bak': No such file or directory
+mv: cannot stat `000010001.gw.00004.bak': No such file or directory
+mv: cannot stat `000010002.gw.00010.bak': No such file or directory
+mv: cannot stat `000010002.gw.00004.bak': No such file or directory
+mv: cannot move `000020001.mgt.00004.bak' to `000020001.mgt.00004': No such file or directory
+mv: cannot move `000020002.mgt.00008.bak' to `000020002.mgt.00008': No such file or directory
+mv: cannot stat `000020001.gw.00008.bak': No such file or directory
+mv: cannot stat `000020002.gw.00008.bak': No such file or directory
+mv: cannot stat `000030001.mgt.00008.bak': No such file or directory
+mv: cannot stat `000030002.mgt.00008.bak': No such file or directory
+mv: cannot stat `000030001.gw.00008.bak': No such file or directory
+mv: cannot move `000040001.mgt.00008.bak' to `000040001.mgt.00008': No such file or directory
+mv: cannot stat `000040001.gw.00008.bak': No such file or directory
+mv: cannot stat `000040002.gw.00008.bak': No such file or directory
+mv: cannot stat `000050001.mgt.00008.bak': No such file or directory
+mv: cannot stat `000050002.mgt.00008.bak': No such file or directory
+mv: cannot stat `000060002.mgt.00008.bak': No such file or directory
+mv: cannot stat `000060001.gw.00008.bak': No such file or directory
+mv: cannot stat `000080001.gw.00008.bak': No such file or directory
+mv: cannot stat `000080002.gw.00008.bak': No such file or directory
+mv: cannot stat `000080003.gw.00008.bak': No such file or directory
+mv: cannot stat `000090001.mgt.00008.bak': No such file or directory
+mv: cannot move `000100001.mgt.00004.bak' to `000100001.mgt.00004': No such file or directory
+mv: cannot stat `000100002.mgt.00004.bak': No such file or directory
+mv: cannot stat `000100001.gw.00004.bak': No such file or directory
+mv: cannot move `000100002.gw.00004.bak' to `000100002.gw.00004': No such file or directory
+mv: cannot move `000110001.mgt.00004.bak' to `000110001.mgt.00004': No such file or directory
+mv: cannot stat `000110002.mgt.00004.bak': No such file or directory
+mv: cannot stat `000110001.gw.00004.bak': No such file or directory
+mv: cannot stat `000110002.gw.00004.bak': No such file or directory
+mv: cannot stat `000120001.gw.00004.bak': No such file or directory
+mv: cannot stat `000130001.gw.00004.bak': No such file or directory
+mv: cannot move `000130002.gw.00004.bak' to `000130002.gw.00004': No such file or directory
+mv: cannot stat `000140001.mgt.00004.bak': No such file or directory
+mv: cannot stat `000140002.mgt.00004.bak': No such file or directory
+mv: cannot stat `000140001.gw.00004.bak': No such file or directory
+ Bad value during integer read                                                                       
+--------------------------------------------------------------------------
+mpirun has exited due to process rank 9 with PID 29960 on
+node node01 exiting improperly. There are three reasons this could occur:
+
+1. this process did not call "init" before exiting, but others in
+the job did. This can cause a job to hang indefinitely while it waits
+for all processes to call "init". By rule, if one process calls "init",
+then ALL processes must call "init" prior to termination.
+
+2. this process called "init", but exited without calling "finalize".
+By rule, all processes that call "init" MUST call "finalize" prior to
+exiting or it will be considered an "abnormal termination"
+
+3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
+orte_create_session_dirs is set to false. In this case, the run-time cannot
+detect that the abort call was an abnormal termination. Hence, the only
+error message you will receive is this one.
+
+This may have caused other processes in the application to be
+terminated by signals sent by mpirun (as reported here).
+
+You can avoid this message by specifying -quiet on the mpirun command line.
+
+--------------------------------------------------------------------------
+mv: cannot stat `000010001.mgt.00002.bak': No such file or directory
+mv: cannot stat `000010001.mgt.00011.bak': No such file or directory
+mv: cannot stat `000010002.mgt.00002.bak': No such file or directory
+mv: cannot stat `000010002.mgt.00011.bak': No such file or directory
+mv: cannot stat `000010001.gw.00011.bak': No such file or directory
+mv: cannot stat `000010002.gw.00011.bak': No such file or directory
+mv: cannot move `000020001.mgt.00011.bak' to `000020001.mgt.00011': No such file or directory
+mv: cannot stat `000020002.mgt.00011.bak': No such file or directory
+mv: cannot stat `000030001.mgt.00011.bak': No such file or directory
+mv: cannot stat `000030002.mgt.00011.bak': No such file or directory
+mv: cannot stat `000040001.mgt.00011.bak': No such file or directory
+mv: cannot stat `000040002.mgt.00011.bak': No such file or directory
+mv: cannot move `000090001.mgt.00002.bak' to `000090001.mgt.00002': No such file or directory
+mv: cannot stat `000200002.mgt.00012.bak': No such file or directory
+mv: cannot stat `000190002.gw.00002.bak': No such file or directory
+mv: cannot stat `out/FLOW_OUT00007.txt': No such file or directory
+mv: cannot stat `000100001.mgt.00001.bak': No such file or directory
+mv: cannot stat `000140001.mgt.00001.bak': No such file or directory
+mv: cannot stat `000140002.mgt.00001.bak': No such file or directory
+mv: cannot stat `000140001.gw.00001.bak': No such file or directory
+mv: cannot stat `000140002.gw.00001.bak': No such file or directory
+mv: cannot stat `000150001.mgt.00001.bak': No such file or directory
+mv: cannot stat `000150002.mgt.00001.bak': No such file or directory
+mv: cannot stat `000200001.gw.00001.bak': No such file or directory
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7585****** 耗时:     9s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7113****** 耗时:    14s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7072****** 耗时:    20s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7048****** 耗时:    26s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.6947****** 耗时:    32s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.6954****** 耗时:    38s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.6997****** 耗时:    44s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.6998****** 耗时:    50s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6967****** 耗时:    56s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6953****** 耗时:    61s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6940****** 耗时:    67s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6927****** 耗时:    73s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6929****** 耗时:    79s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6903****** 耗时:    85s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6893****** 耗时:    91s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6833****** 耗时:    96s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6803****** 耗时:   103s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6749****** 耗时:   109s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6722****** 耗时:   114s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6688****** 耗时:   120s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 19:55:21:678   结束时间: 20170510 19:57:21:426    历时:  120s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num =  9
+
+
+ best object function value(  0.7585) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7835****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7225****** 耗时:    12s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7107****** 耗时:    18s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7191****** 耗时:    24s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7148****** 耗时:    30s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.7082****** 耗时:    36s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.7034****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.7011****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6909****** 耗时:    53s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6859****** 耗时:    59s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6685****** 耗时:    65s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6592****** 耗时:    71s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6502****** 耗时:    77s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6428****** 耗时:    82s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6379****** 耗时:    88s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6299****** 耗时:    94s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6205****** 耗时:    99s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6169****** 耗时:   105s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6041****** 耗时:   111s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.5908****** 耗时:   117s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 19:57:21:572   结束时间: 20170510 19:59:18:557    历时:  117s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num = 12
+
+
+ best object function value(  0.7835) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7999****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7217****** 耗时:    12s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.6973****** 耗时:    17s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7027****** 耗时:    23s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.6953****** 耗时:    29s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.6949****** 耗时:    34s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.6949****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.6912****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6909****** 耗时:    53s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6863****** 耗时:    59s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6843****** 耗时:    64s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6841****** 耗时:    70s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6860****** 耗时:    76s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6792****** 耗时:    82s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6699****** 耗时:    88s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6693****** 耗时:    94s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6625****** 耗时:   100s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6566****** 耗时:   105s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6538****** 耗时:   111s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6404****** 耗时:   117s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 19:59:18:705   结束时间: 20170510 20:01:15:314    历时:  117s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num = 13
+
+
+ best object function value(  0.7999) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7689****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7401****** 耗时:    12s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.6977****** 耗时:    18s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.6992****** 耗时:    24s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.6881****** 耗时:    30s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.6834****** 耗时:    36s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.6836****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.6798****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6803****** 耗时:    53s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6748****** 耗时:    58s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6708****** 耗时:    64s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6685****** 耗时:    70s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6636****** 耗时:    76s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6542****** 耗时:    82s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6535****** 耗时:    88s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6491****** 耗时:    94s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6505****** 耗时:    99s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6526****** 耗时:   105s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6539****** 耗时:   111s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6543****** 耗时:   117s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:01:15:461   结束时间: 20170510 20:03:12:331    历时:  117s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num =  5
+
+
+ best object function value(  0.7689) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7514****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7281****** 耗时:    12s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7188****** 耗时:    18s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7156****** 耗时:    24s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7170****** 耗时:    30s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.7092****** 耗时:    36s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.7102****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.7139****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.7168****** 耗时:    53s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.7177****** 耗时:    59s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.7159****** 耗时:    65s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.7071****** 耗时:    71s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.7028****** 耗时:    76s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6998****** 耗时:    82s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6913****** 耗时:    88s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6857****** 耗时:    94s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6849****** 耗时:   100s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6860****** 耗时:   106s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6860****** 耗时:   112s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6808****** 耗时:   118s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:03:12:478   结束时间: 20170510 20:05:11:042    历时:  119s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num = 15
+
+
+ best object function value(  0.7514) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7660****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7046****** 耗时:    11s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7098****** 耗时:    17s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7187****** 耗时:    23s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7200****** 耗时:    28s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.7145****** 耗时:    34s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.7055****** 耗时:    40s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.7049****** 耗时:    46s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6945****** 耗时:    52s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6936****** 耗时:    58s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6823****** 耗时:    64s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6818****** 耗时:    70s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6744****** 耗时:    76s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6660****** 耗时:    82s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6647****** 耗时:    87s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6622****** 耗时:    93s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6531****** 耗时:    99s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6455****** 耗时:   105s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6415****** 耗时:   110s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6420****** 耗时:   116s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:05:11:205   结束时间: 20170510 20:07:08:098    历时:  117s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num = 11
+
+
+ best object function value(  0.7660) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7763****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7255****** 耗时:    11s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7166****** 耗时:    18s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7184****** 耗时:    23s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7143****** 耗时:    29s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.7095****** 耗时:    35s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.6984****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.6952****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6973****** 耗时:    52s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6984****** 耗时:    58s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6883****** 耗时:    64s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6854****** 耗时:    70s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6840****** 耗时:    76s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6745****** 耗时:    81s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6676****** 耗时:    87s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6675****** 耗时:    93s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6638****** 耗时:    99s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6561****** 耗时:   105s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6548****** 耗时:   111s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6414****** 耗时:   117s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:07:08:245   结束时间: 20170510 20:09:05:396    历时:  117s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num =  5
+
+
+ best object function value(  0.7763) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7433****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7209****** 耗时:    12s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7188****** 耗时:    17s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7127****** 耗时:    23s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7075****** 耗时:    29s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.6915****** 耗时:    35s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.6892****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.6841****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6784****** 耗时:    52s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6808****** 耗时:    58s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6805****** 耗时:    65s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6817****** 耗时:    71s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6777****** 耗时:    77s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6756****** 耗时:    83s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6758****** 耗时:    88s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6758****** 耗时:    94s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6746****** 耗时:   100s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6752****** 耗时:   107s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6677****** 耗时:   113s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6623****** 耗时:   119s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:09:05:539   结束时间: 20170510 20:11:04:191    历时:  119s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num = 15
+
+
+ best object function value(  0.7433) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7437****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7306****** 耗时:    12s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7213****** 耗时:    17s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7225****** 耗时:    23s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7053****** 耗时:    29s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.6989****** 耗时:    35s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.6852****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.6784****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6777****** 耗时:    52s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6711****** 耗时:    58s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6672****** 耗时:    64s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6647****** 耗时:    70s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6589****** 耗时:    76s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6621****** 耗时:    81s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6647****** 耗时:    87s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6619****** 耗时:    93s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6606****** 耗时:    99s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6627****** 耗时:   105s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6620****** 耗时:   111s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6604****** 耗时:   117s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:11:04:342   结束时间: 20170510 20:13:01:260    历时:  117s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num = 10
+
+
+ best object function value(  0.7437) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7869****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7323****** 耗时:    12s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7157****** 耗时:    17s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7094****** 耗时:    23s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7118****** 耗时:    29s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.7049****** 耗时:    35s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.6937****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.6903****** 耗时:    46s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6930****** 耗时:    52s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6887****** 耗时:    58s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6851****** 耗时:    64s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6805****** 耗时:    70s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6805****** 耗时:    76s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6794****** 耗时:    82s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6770****** 耗时:    87s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6712****** 耗时:    93s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6571****** 耗时:    99s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6506****** 耗时:   105s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6467****** 耗时:   111s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6461****** 耗时:   117s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:13:01:401   结束时间: 20170510 20:14:58:314    历时:  117s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num =  9
+
+
+ best object function value(  0.7869) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7789****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7159****** 耗时:    12s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7145****** 耗时:    18s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7113****** 耗时:    23s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7134****** 耗时:    29s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.7075****** 耗时:    35s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.7011****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.6973****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6906****** 耗时:    53s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6839****** 耗时:    58s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6820****** 耗时:    64s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6803****** 耗时:    70s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6815****** 耗时:    76s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6640****** 耗时:    82s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6610****** 耗时:    88s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6545****** 耗时:    94s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6472****** 耗时:   100s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6335****** 耗时:   106s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6288****** 耗时:   112s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6220****** 耗时:   117s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:14:58:480   结束时间: 20170510 20:16:56:037    历时:  118s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num =  4
+
+
+ best object function value(  0.7789) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7614****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7273****** 耗时:    12s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7181****** 耗时:    18s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7122****** 耗时:    24s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7108****** 耗时:    29s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.7057****** 耗时:    35s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.6979****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.6975****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6996****** 耗时:    53s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6993****** 耗时:    58s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.7021****** 耗时:    64s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6972****** 耗时:    70s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6985****** 耗时:    76s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6853****** 耗时:    82s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6796****** 耗时:    88s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6689****** 耗时:    94s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6678****** 耗时:   100s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6690****** 耗时:   106s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6641****** 耗时:   112s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6625****** 耗时:   117s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:16:56:183   结束时间: 20170510 20:18:53:842    历时:  117s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num =  3
+
+
+ best object function value(  0.7614) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7621****** 耗时:     7s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7330****** 耗时:    12s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7065****** 耗时:    18s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7120****** 耗时:    24s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7044****** 耗时:    30s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.7040****** 耗时:    36s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.6992****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.6935****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6853****** 耗时:    53s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6842****** 耗时:    59s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6816****** 耗时:    65s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6708****** 耗时:    71s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6719****** 耗时:    77s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6643****** 耗时:    83s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6660****** 耗时:    89s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6526****** 耗时:    95s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6499****** 耗时:   101s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6482****** 耗时:   106s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6460****** 耗时:   112s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6426****** 耗时:   118s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:18:53:993   结束时间: 20170510 20:20:51:693    历时:  118s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num =  2
+
+
+ best object function value(  0.7621) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7797****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7009****** 耗时:    12s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.6910****** 耗时:    17s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.6948****** 耗时:    23s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7019****** 耗时:    29s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.7024****** 耗时:    35s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.7061****** 耗时:    40s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.7061****** 耗时:    46s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.7092****** 耗时:    52s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.7017****** 耗时:    58s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.7025****** 耗时:    63s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6947****** 耗时:    69s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6867****** 耗时:    75s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6840****** 耗时:    81s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6723****** 耗时:    87s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6685****** 耗时:    93s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6499****** 耗时:    99s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6449****** 耗时:   105s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6397****** 耗时:   110s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6390****** 耗时:   116s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:20:51:842   结束时间: 20170510 20:22:47:721    历时:  116s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num = 13
+
+
+ best object function value(  0.7797) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7436****** 耗时:     7s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7252****** 耗时:    12s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7124****** 耗时:    18s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7136****** 耗时:    23s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7135****** 耗时:    29s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.7124****** 耗时:    35s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.7138****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.7101****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.7092****** 耗时:    53s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.7023****** 耗时:    58s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6962****** 耗时:    64s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6926****** 耗时:    70s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6886****** 耗时:    76s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6830****** 耗时:    82s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6763****** 耗时:    88s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6658****** 耗时:    94s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6570****** 耗时:   100s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6516****** 耗时:   106s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6508****** 耗时:   112s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6457****** 耗时:   118s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:22:47:865   结束时间: 20170510 20:24:45:865    历时:  118s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num =  4
+
+
+ best object function value(  0.7436) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7700****** 耗时:     5s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7308****** 耗时:    11s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7265****** 耗时:    17s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7290****** 耗时:    23s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7111****** 耗时:    29s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.7045****** 耗时:    35s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.6981****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.6929****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.6920****** 耗时:    53s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.6893****** 耗时:    58s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.6923****** 耗时:    65s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.6885****** 耗时:    70s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.6864****** 耗时:    76s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6776****** 耗时:    82s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6635****** 耗时:    88s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6620****** 耗时:    94s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6570****** 耗时:   100s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6475****** 耗时:   106s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6351****** 耗时:   111s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6342****** 耗时:   117s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:24:46:006   结束时间: 20170510 20:26:43:828    历时:  117s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num = 15
+
+
+ best object function value(  0.7700) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
+ ***************************遗传算法进化代数:   1 最大目标函数值:  0.7752****** 耗时:     6s*****************************************
+ ***************************遗传算法进化代数:   2 最大目标函数值:  0.7214****** 耗时:    13s*****************************************
+ ***************************遗传算法进化代数:   3 最大目标函数值:  0.7212****** 耗时:    18s*****************************************
+ ***************************遗传算法进化代数:   4 最大目标函数值:  0.7223****** 耗时:    24s*****************************************
+ ***************************遗传算法进化代数:   5 最大目标函数值:  0.7161****** 耗时:    30s*****************************************
+ ***************************遗传算法进化代数:   6 最大目标函数值:  0.7180****** 耗时:    35s*****************************************
+ ***************************遗传算法进化代数:   7 最大目标函数值:  0.7126****** 耗时:    41s*****************************************
+ ***************************遗传算法进化代数:   8 最大目标函数值:  0.7113****** 耗时:    47s*****************************************
+ ***************************遗传算法进化代数:   9 最大目标函数值:  0.7098****** 耗时:    53s*****************************************
+ ***************************遗传算法进化代数:  10 最大目标函数值:  0.7029****** 耗时:    59s*****************************************
+ ***************************遗传算法进化代数:  11 最大目标函数值:  0.7044****** 耗时:    64s*****************************************
+ ***************************遗传算法进化代数:  12 最大目标函数值:  0.7024****** 耗时:    71s*****************************************
+ ***************************遗传算法进化代数:  13 最大目标函数值:  0.7004****** 耗时:    77s*****************************************
+ ***************************遗传算法进化代数:  14 最大目标函数值:  0.6962****** 耗时:    82s*****************************************
+ ***************************遗传算法进化代数:  15 最大目标函数值:  0.6976****** 耗时:    88s*****************************************
+ ***************************遗传算法进化代数:  16 最大目标函数值:  0.6994****** 耗时:    93s*****************************************
+ ***************************遗传算法进化代数:  17 最大目标函数值:  0.6920****** 耗时:   100s*****************************************
+ ***************************遗传算法进化代数:  18 最大目标函数值:  0.6845****** 耗时:   106s*****************************************
+ ***************************遗传算法进化代数:  19 最大目标函数值:  0.6733****** 耗时:   112s*****************************************
+ ***************************遗传算法进化代数:  20 最大目标函数值:  0.6667****** 耗时:   118s*****************************************
+
+
+ *************************************************************
+ *************并行遗传算法率定swat参数**********************
+
+
+ 开始时间: 20170510 20:26:43:969   结束时间: 20170510 20:28:41:189    历时:  118s
+
+
+ 率定的参数个数:  4 迭代次数:   20  种子个数:   64  进程数:   16
+
+
+ the best simulate: the recur_num =  1    the seed_num =  2
+
+
+ best object function value(  0.7752) not arrive the threshold(0.90)
+
+
+ *************************************************************
+ *************************************************************
